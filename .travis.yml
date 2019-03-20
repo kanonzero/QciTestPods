@@ -1,4 +1,4 @@
-language: objective-c
+language: swift
 
 osx_image: xcode10.1
 env:
@@ -11,4 +11,4 @@ script:
 
 after_success:
   - slather
-  - bash <(curl -s https://codecov.io/bash) -f reports/cobertura.xml -X coveragepy -X gcov -X xcode
+  - bash <(curl -s https://codecov.io/bash) -t 2448d98c-8f0f-4b69-b3d5-818ee03353d9 -f reports/cobertura.xml -X coveragepy -X gcov -X xcode
