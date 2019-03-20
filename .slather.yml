@@ -1,6 +1,6 @@
 coverage_service: cobertura_xml
 xcodeproj: QciTestPods.xcodeproj
-scheme: QciTestPods
+scheme: QciTestPodsTests
 output_directory: reports
 ignore:
   - QciTestPodsTests/*
