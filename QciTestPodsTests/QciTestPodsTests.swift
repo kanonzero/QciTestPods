@@ -10,9 +10,12 @@ import XCTest
 @testable import QciTestPods
 
 class QciTestPodsTests: XCTestCase {
+    
+    var mQciTestPods: QciTestLib!
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        mQciTestPods = QciTestLib()
     }
 
     override func tearDown() {
@@ -29,6 +32,14 @@ class QciTestPodsTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testAdd() {
+        XCTAssertEqual(mQciTestPods.add(a: 1, b: 1), 2)
+    }
+    
+    func testSub() {
+        XCTAssertEqual(mQciTestPods.sub(a: 2, b: 1), 1)
     }
 
 }

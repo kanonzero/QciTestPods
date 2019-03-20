@@ -15,6 +15,7 @@
 		7C177FC02241E4AB000AB76C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C177FBE2241E4AB000AB76C /* Main.storyboard */; };
 		7C177FC22241E4AC000AB76C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C177FC12241E4AC000AB76C /* Assets.xcassets */; };
 		7C177FC52241E4AC000AB76C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C177FC32241E4AC000AB76C /* LaunchScreen.storyboard */; };
+		7C177FCB2241ECF7000AB76C /* QciTestLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C177FCA2241ECF7000AB76C /* QciTestLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		7C177FC12241E4AC000AB76C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C177FC42241E4AC000AB76C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C177FC62241E4AC000AB76C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C177FCA2241ECF7000AB76C /* QciTestLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QciTestLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				7C177F9D2241E437000AB76C /* QciTestPods.h */,
 				7C177F9E2241E437000AB76C /* Info.plist */,
+				7C177FCA2241ECF7000AB76C /* QciTestLib.swift */,
 			);
 			path = QciTestPods;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				TargetAttributes = {
 					7C177F992241E437000AB76C = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					7C177FA22241E437000AB76C = {
 						CreatedOnToolsVersion = 10.1;
@@ -260,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C177FCB2241ECF7000AB76C /* QciTestLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +440,7 @@
 		7C177FAF2241E437000AB76C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -452,6 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.test.QciTestPods;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,6 +467,7 @@
 		7C177FB02241E437000AB76C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -485,6 +493,7 @@
 		7C177FB22241E437000AB76C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U8Z6D83J8D;
 				INFOPLIST_FILE = QciTestPodsTests/Info.plist;
@@ -503,6 +512,7 @@
 		7C177FB32241E437000AB76C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U8Z6D83J8D;
 				INFOPLIST_FILE = QciTestPodsTests/Info.plist;
